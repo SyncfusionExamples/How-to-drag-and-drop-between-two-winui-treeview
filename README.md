@@ -1,10 +1,10 @@
-# How to drag and drop between two WinUI TreeView
+# How to Drag and Drop Between Two WinUI TreeView?
 
 This example describes how to drag and drop between two [WinUI TreeView](https://www.syncfusion.com/winui-controls/treeview) (SfTreeView).
 
 You can customize the dragging operation between two treeview by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDragStarting), [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping) and [SfTreeView.ItemDropped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropped) events.
 
-``` csharp
+``` c#
 AssociatedObject.sfTreeView1.ItemDragStarting += SfTreeView1_ItemDragStarting;    
 AssociatedObject.sfTreeView1.ItemDropping += SfTreeView1_ItemDropping;
 AssociatedObject.sfTreeView2.ItemDropping += SfTreeView2_ItemDropping;
@@ -78,3 +78,5 @@ private void SfTreeView1_ItemDropped(object sender, Syncfusion.UI.Xaml.TreeView.
     }
 }
 ```
+
+![Drag and drop item between two TreeView](DragAndDrop.png)
